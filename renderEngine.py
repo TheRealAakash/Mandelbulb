@@ -50,7 +50,6 @@ class Renderer:
         self.vertex_shader = shaders.compileShader(VERTEX_SHADER, GL_VERTEX_SHADER)
         self.fragment_shader = shaders.compileShader(FRAGMENT_SHADER, GL_FRAGMENT_SHADER)
         self.shader = shaders.compileProgram(self.vertex_shader, self.fragment_shader)
-        # THERE IS MOUSE STUFF BUT IGNORE IT
         # Uniform variables
         self.uniformMouse = glGetUniformLocation(self.shader, 'iMouse')
         self.uniformTime = glGetUniformLocation(self.shader, 'iTime')
